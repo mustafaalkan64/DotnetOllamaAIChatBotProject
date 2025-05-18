@@ -48,7 +48,12 @@ An AI-powered chatbot web application built using **ASP.NET Core (.NET 9) Web Ap
    ```bash
    git clone https://github.com/mustafaalkan64/DotnetOllamaAIChatBotProject.git
    cd DotnetOllamaAIChatBotProject
-   curl http://localhost:5000/api/chat/ask \
+
+   ### 📡 Example: Call the API with `curl`
+
+```bash
+curl http://localhost:5000/api/chat/ask \
+  -H "Content-Type: application/json" \
   -d '{
     "model": "llama3",
     "messages": [
@@ -60,3 +65,4 @@ An AI-powered chatbot web application built using **ASP.NET Core (.NET 9) Web Ap
     "stream": true
   }'
 
+![Chat UI Screenshot][(https://github.com/mustafaalkan64/DotnetOllamaAIChatBotProject/blob/master/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-19%20000631.png)]
