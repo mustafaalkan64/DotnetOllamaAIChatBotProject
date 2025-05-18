@@ -1,6 +1,6 @@
 # 🧠 Dotnet Ollama AI ChatBot Project
 
-An AI-powered chatbot web application built using **ASP.NET Core (.NET 9) Web Api**, and **Ollama** for local large language models (LLMs). Supports real-time streaming, Docker deployment, and `.zip` export of chat history.
+An AI-powered chatbot web application built using **ASP.NET Core (.NET 9) Web API** and **Ollama** for local large language models (LLMs). Supports real-time streaming, Docker deployment, and `.zip` export of chat history.
 
 ---
 
@@ -16,15 +16,14 @@ An AI-powered chatbot web application built using **ASP.NET Core (.NET 9) Web Ap
 
 ## 🛠️ Tech Stack
 
-| Layer         | Technology                            |
-|---------------|----------------------------------------|
-| Backend       | ASP.NET Core (.NET 9) Web API          |
-| AI Model      | [Ollama](https://ollama.com)           |
-| Streaming     | Server-Sent Events (SSE)               |
-| Deployment    | Docker                                 |
+| Layer      | Technology                          |
+|------------|-----------------------------------|
+| Backend    | ASP.NET Core (.NET 9) Web API      |
+| AI Model   | [Ollama](https://ollama.com)       |
+| Streaming  | Server-Sent Events (SSE)           |
+| Deployment | Docker                            |
 
 ---
-
 
 ## ⚙️ Getting Started
 
@@ -33,19 +32,22 @@ An AI-powered chatbot web application built using **ASP.NET Core (.NET 9) Web Ap
 - [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
 - [Ollama](https://ollama.com) installed and running locally
 - Docker (optional for containerized deployment)
-- After you installed ollama on your local, please run: **ollama run llama3** and you must install llama3 llm model.
 
----
+After installing Ollama locally, please run:
 
-### 🔧 Run Locally
+```bash
+ollama run llama3
+```
 
-**Clone the repo**
-   ```bash
-   git clone https://github.com/mustafaalkan64/DotnetOllamaAIChatBotProject.git
-   cd DotnetOllamaAIChatBotProject
+## 🔧 Run Locally
 
-### 📡 Example: Call the API with `curl`
+```bash
+git clone https://github.com/mustafaalkan64/DotnetOllamaAIChatBotProject.git
+cd DotnetOllamaAIChatBotProject
+dotnet run --project src/DotnetOllamaAIChatBotProject
+```
 
+## 📡 Example: Call the API with curl
 ```bash
 curl http://localhost:5000/api/chat/ask \
   -H "Content-Type: application/json" \
@@ -59,7 +61,7 @@ curl http://localhost:5000/api/chat/ask \
     ],
     "stream": true
   }'
+```
 
-### 🖥️ Api Preview
-
+🖥️ API Preview
 ![Screenshot](https://raw.githubusercontent.com/mustafaalkan64/DotnetOllamaAIChatBotProject/master/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-19%20000631.png)
