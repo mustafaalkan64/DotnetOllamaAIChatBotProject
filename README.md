@@ -25,11 +25,6 @@ An AI-powered chatbot web application built using **ASP.NET Core (.NET 9) Web Ap
 
 ---
 
-## 📸 UI Preview
-
-> 📷 _Add screenshots here for better visual reference._
-
----
 
 ## ⚙️ Getting Started
 
@@ -44,7 +39,7 @@ An AI-powered chatbot web application built using **ASP.NET Core (.NET 9) Web Ap
 
 ### 🔧 Run Locally
 
-1. **Clone the repo**
+**Clone the repo**
    ```bash
    git clone https://github.com/mustafaalkan64/DotnetOllamaAIChatBotProject.git
    cd DotnetOllamaAIChatBotProject
@@ -65,6 +60,6 @@ curl http://localhost:5000/api/chat/ask \
     "stream": true
   }'
 
-### 🖥️ UI Preview
+### 🖥️ Api Preview
 
-![Chat UI Screenshot](https://raw.githubusercontent.com/mustafaalkan64/DotnetOllamaAIChatBotProject/master/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-19%20000631.png)
+![Screenshot](https://raw.githubusercontent.com/mustafaalkan64/DotnetOllamaAIChatBotProject/master/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-19%20000631.png)
