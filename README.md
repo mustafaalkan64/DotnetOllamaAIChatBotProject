@@ -48,5 +48,43 @@ An AI-powered chatbot web application built using **ASP.NET Core (.NET 9) Web Ap
    ```bash
    git clone https://github.com/mustafaalkan64/DotnetOllamaAIChatBotProject.git
    cd DotnetOllamaAIChatBotProject
-   curl [x](http://localhost:5000/api/chat/ask)
-   https://github.com/mustafaalkan64/DotnetOllamaAIChatBotProject/blob/master/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-19%20000631.png
+   curl [x](http://localhost:5000/api/chat/ask)Run Ollama locally
+
+bash
+Kopyala
+Düzenle
+ollama run llama3
+Launch the app
+
+bash
+Kopyala
+Düzenle
+dotnet run --project src/DotnetOllamaAIChatBotProject
+Navigate to:
+
+bash
+Kopyala
+Düzenle
+https://localhost:5001 or http://localhost:5000
+🐳 Run with Docker
+Build and run the container:
+
+bash
+Kopyala
+Düzenle
+docker build -t dotnet-ollama-chat .
+docker run -p 5000:80 dotnet-ollama-chat
+Ensure Ollama is running locally on the host machine.
+
+📁 Project Structure
+bash
+Kopyala
+Düzenle
+/src
+  └── DotnetOllamaAIChatBotProject
+       ├── Controllers
+       ├── Services
+       ├── Models
+       └── Program.cs
+/wwwroot
+  └── index.html (Minimal HTML UI)
